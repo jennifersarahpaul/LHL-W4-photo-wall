@@ -16,11 +16,13 @@ body {
     float: left;
     /*border: 1px solid gray;*/
     margin: 10px;
-    padding: 6px;
+    padding: 0px;
     position: relative;
     img {
       width: 200px;
       height: 200px;
+      border-style: solid;
+      border-radius: 15px 50px;
     }
     div.name {
       text-align: center;
