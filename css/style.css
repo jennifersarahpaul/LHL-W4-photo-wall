@@ -1,8 +1,9 @@
 body {
+  background-color: #bad4f6;
   font-family: Verdana;
   font-size: 1.5em; }
   body h1 {
-    color: #ff0000; }
+    color: #000080; }
 
 #team-members {
   clear: both; }
@@ -10,11 +11,19 @@ body {
     float: left;
     /*border: 1px solid gray;*/
     margin: 10px;
-    padding: 6px; }
+    padding: 6px;
+    position: relative; }
     #team-members .member img {
       width: 200px;
       height: 200px; }
     #team-members .member div.name {
-      text-align: center; }
+      text-align: center;
+      font-family: Impact; }
+    #team-members .member .photo {
+      position: absolute;
+      top: 0; }
+      #team-members .member .photo :hover {
+        transition: opacity 0.75s ease-in-out;
+        opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
-$primaryColor: #ff0000;
+$primaryColor: #000080;
+$backgroundColor: #bad4f6;
 
 body {
+  background-color: $backgroundColor;
   font-family: Verdana;
   font-size: 1.5em;
   h1 {
@@ -15,12 +17,22 @@ body {
     /*border: 1px solid gray;*/
     margin: 10px;
     padding: 6px;
+    position: relative;
     img {
       width: 200px;
       height: 200px;
     }
     div.name {
-      text-align: center;  
+      text-align: center;
+      font-family: Impact;  
+    }
+    .photo {
+      position: absolute;
+      top: 0;
+      :hover {
+        transition: opacity 0.75s ease-in-out;
+        opacity: 0;
+      }
     }
   }
 }
